@@ -1,0 +1,20 @@
+{
+  "extends": [
+    "plugin:vue/essential",
+    "standard"
+  ],
+  "plugins": [
+    "vue"
+  ],
+  "parser": "vue-eslint-parser",
+  "parserOptions": {
+    "sourceType": "module"
+  },
+  "env": {
+    "browser": true
+  },
+  "globals": {
+    "$": true
+  },
+  "rules": {}
+}

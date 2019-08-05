@@ -1,0 +1,159 @@
+.block-margin-top {
+  margin-top: 36px;
+}
+
+.element-margin-top {
+  margin-top: 24px;
+}
+
+.element-margin-left {
+  margin-left: 24px;
+}
+
+.sub-title {
+  border-bottom: solid 3px $base-font-color;
+  font-size: $header-font-size;
+}
+
+.content-title {
+  border-bottom: solid 2px $base-font-color;
+}
+
+.module-container + .module-container {
+  margin-top: 64px;
+}
+
+// info
+.info-a {
+  th {
+    min-width: 150px;
+    padding: 12px 24px 12px 0;
+    font-size: $base-font-size;
+    text-align: left;
+  }
+
+  td {
+    padding: 12px 0;
+    font-size: $base-font-size;
+  }
+}
+
+.info-b {
+  $scope-cell-color: $primary-color;
+  $scope-border-color: $primary-color;
+  $scope-color: #eee;
+
+  &,
+  & th,
+  & td {
+    border: {
+      left: none;
+      color: $scope-border-color;
+      bottom-width: 1px;
+      right-width: 1px;
+      style: solid;
+      top-width: 1px;
+    }
+  }
+
+  &__3col {
+    th {
+      min-width: 70px;
+    }
+
+    td {
+      min-width: 70px;
+    }
+  }
+
+  th,
+  td {
+    padding: 8px 12px;
+    font-size: $base-font-size;
+  }
+
+  th {
+    background-color: $scope-cell-color;
+    color: $scope-color;
+    text-align: left;
+  }
+
+  .border-bottom-white {
+    border-bottom-color: #eee;
+  }
+}
+
+.content-nowrap-right {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.detail,
+.edit {
+  padding: 36px;
+  background-color: $content-bg-color;
+}
+
+.detail {
+  min-width: 500px;
+  padding: 36px;
+  background-color: $content-bg-color;
+}
+
+.detail__header {
+  width: 100%;
+}
+
+.detail__footer {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+  /* Required for text-overflow to do anything */
+  white-space: nowrap;
+}
+
+.number-cell {
+  text-align: right;
+}
+
+.s-list-wrap,
+.s-list {
+  width: 100%;
+}
+
+.s-list__row {
+  padding-left: 12px;
+
+  &:hover {
+    background-color: #dfdfdf;
+  }
+}
+
+.s-list__item {
+  padding: 12px;
+  font-weight: bold;
+  font-size: $base-font-size;
+}
+
+.s-list__item--date {
+  flex-basis: 140px;
+}
+
+.s-list__item--button {
+  flex-basis: 50px;
+  width: 20px;
+}
+
+.s-list__item--icon {
+  display: block;
+  width: 28px;
+}

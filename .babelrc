@@ -1,0 +1,23 @@
+{
+  "presets": [
+    ["env", {
+      "modules": false
+    }],
+    "stage-3"
+  ],
+  "env": {
+    "test": {
+      "presets": ["env", "stage-3"],
+      "plugins": [ "istanbul" ]
+    }
+  },
+  "plugins": [
+    [
+      "component",
+      {
+        "libraryName": "element-ui",
+        "styleLibraryName": "theme-chalk"
+      }
+    ]
+  ]
+}

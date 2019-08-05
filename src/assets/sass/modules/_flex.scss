@@ -1,0 +1,159 @@
+$element: 24px;
+$block: 64px;
+
+.box {
+  display: flex;
+
+  &.col {
+    flex-direction: column;
+  }
+
+  &.row {
+    flex-direction: row;
+  }
+
+  &.cx {
+    align-items: center;
+  }
+
+  &.cy {
+    justify-content: center;
+  }
+
+  &.cxy {
+    align-items: center;
+    justify-content: center;
+  }
+
+  &.wrap {
+    flex-wrap: wrap;
+  }
+
+  &.nowrap {
+    flex-wrap: nowrap;
+  }
+
+  &.wrap-reverse {
+    flex-wrap: wrap-reverse;
+  }
+
+  &.jc- {
+    &start {
+      justify-content: flex-start;
+    }
+
+    &end {
+      justify-content: flex-end;
+    }
+
+    &center {
+      justify-content: center;
+    }
+
+    &between {
+      justify-content: space-between;
+    }
+
+    &around {
+      justify-content: space-around;
+    }
+
+    &evenly {
+      justify-content: space-evenly;
+    }
+  }
+
+  &.ai- {
+    &start {
+      align-items: flex-start;
+    }
+
+    &end {
+      align-items: flex-end;
+    }
+
+    &center {
+      align-items: center;
+    }
+
+    &stretch {
+      align-items: stretch;
+    }
+
+    &baseline {
+      align-items: baseline;
+    }
+  }
+
+  &.ac- {
+    &start {
+      align-content: flex-start;
+    }
+
+    &end {
+      align-content: flex-end;
+    }
+
+    &center {
+      align-content: center;
+    }
+
+    &stretch {
+      align-content: stretch;
+    }
+
+    &between {
+      align-content: space-between;
+    }
+
+    &around {
+      align-content: space-around;
+    }
+  }
+
+  .grow-1 {
+    flex-grow: 1;
+  }
+
+  @for $i from 1 through 12 {
+    .col-#{$i} {
+      flex-basis: 100% / 12 * $i;
+    }
+
+    .colmin-#{$i} {
+      min-width: 100% / 12 * $i;
+    }
+  }
+}
+
+@for $i from 1 through 100 {
+  .m-#{$i} {
+    margin: #{$i}px;
+  }
+
+  .mt-#{$i} {
+    margin-top: #{$i}px;
+  }
+
+  .mr-#{$i} {
+    margin-right: #{$i}px;
+  }
+
+  .mb-#{$i} {
+    margin-bottom: #{$i}px;
+  }
+
+  .ml-#{$i} {
+    margin-left: #{$i}px;
+  }
+
+  .p-#{$i} {
+    padding: #{$i}px;
+  }
+}
+
+.center {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

@@ -1,0 +1,20 @@
+.cascade-item {
+  left: -15;
+  margin-left: -15px;
+  opacity: 0;
+  transition: margin 0.3s, opacity 0.3s;
+
+  @at-root {
+    &--not-move {
+      margin-left: 0 !important;
+    }
+
+    &--shown {
+      opacity: 1 !important;
+    }
+  }
+}
+
+tr.cascade-item {
+  display: block;
+}

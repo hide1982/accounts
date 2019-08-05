@@ -1,0 +1,57 @@
+
+* {
+  word-break: break-word;
+}
+
+body {
+  min-width: $min-width;
+  background-color: $content-bg-color;
+  color: $base-font-color;
+  letter-spacing: 0.03em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font: {
+    family: $base-font-family;
+  }
+}
+
+table {
+  table-layout: fixed;
+  border-collapse: collapse;
+}
+
+ul {
+  list-style-type: none;
+}
+
+button:focus {
+  outline: 0;
+}
+
+input, select, textarea {
+  outline: 0;
+
+  &:focus {
+    border-color: #555;
+  }
+}
+
+pre {
+  font-family: $base-font-family;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.3s;
+}
+
+.fade-enter,
+.fade-leave-to {
+  opacity: 0;
+}

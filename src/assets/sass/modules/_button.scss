@@ -1,0 +1,78 @@
+.button {
+  min-width: 100px;
+  padding: 7px 14px;
+  border: none;
+  font-weight: bold;
+  font-size: $button-font-size;
+  letter-spacing: 0.1em;
+  transition: all 0.15s;
+}
+
+.button--primary {
+  background-color: $primary-color;
+  color: $white-font-color;
+
+  &:hover {
+    color: #777;
+  }
+}
+
+.button--secondary {
+  background-color: $secondary-color;
+  color: $white-font-color;
+
+  &:hover {
+    color: #bbb;
+  }
+}
+
+.button-close {
+  display: block;
+  position: relative;
+  width: 16px;
+  height: 16px;
+  background-image: url("data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTYuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgd2lkdGg9IjE2cHgiIGhlaWdodD0iMTZweCIgdmlld0JveD0iMCAwIDYxMiA2MTIiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDYxMiA2MTI7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4KPGc+Cgk8ZyBpZD0iY3Jvc3MiPgoJCTxnPgoJCQk8cG9seWdvbiBwb2ludHM9IjYxMiwzNi4wMDQgNTc2LjUyMSwwLjYwMyAzMDYsMjcwLjYwOCAzNS40NzgsMC42MDMgMCwzNi4wMDQgMjcwLjUyMiwzMDYuMDExIDAsNTc1Ljk5NyAzNS40NzgsNjExLjM5NyAgICAgIDMwNiwzNDEuNDExIDU3Ni41MjEsNjExLjM5NyA2MTIsNTc1Ljk5NyAzNDEuNDU5LDMwNi4wMTEgICAgIiBmaWxsPSIjMDAwMDAwIi8+CgkJPC9nPgoJPC9nPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+Cjwvc3ZnPgo=");
+}
+
+.input-file {
+  position: absolute;
+  overflow: hidden;
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+}
+
+.input-file + label {
+  display: inline-block;
+  min-width: 100px;
+  padding: 10px 26px;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.1s;
+}
+
+.str-button {
+  padding: 5px 10px;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  transition: all 0.1s;
+}
+
+.str-button--primary {
+  background-color: $primary-color;
+  color: $white-font-color;
+
+  &:hover {
+    color: #777;
+  }
+}
+
+.str-button--secondary {
+  background-color: $secondary-color;
+  color: $white-font-color;
+
+  &:hover {
+    color: #bbb;
+  }
+}

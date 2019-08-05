@@ -1,0 +1,58 @@
+.el-date-table td span {
+  border: solid 1px #fff;
+  border-radius: 0;
+  font-size: 11px;
+}
+
+.el-date-table td:hover span {
+  border-color: $base-border-color;
+  color: $base-font-color;
+  line-height: 23px;
+}
+
+.el-date-table td.today span {
+  border-bottom-color: $base-border-color;
+  color: #222;
+}
+
+.el-date-table td.current:not(.disabled) span {
+  background-color: #222;
+  font-weight: bold;
+}
+
+.el-input__inner {
+  border-color: $base-border-color;
+  border-radius: 0;
+  background-color: $form-item-bg-color;
+  color: $base-font-color;
+
+  &:focus {
+    border-color: #666;
+    box-shadow: #999;
+  }
+}
+
+.el-picker-panel {
+  border-radius: 0;
+}
+
+.el-date-picker__header-label {
+  font-size: 14px;
+}
+
+button.el-picker-panel__icon-btn.el-date-picker__prev-btn.el-icon-d-arrow-left,
+button.el-picker-panel__icon-btn.el-date-picker__prev-btn.el-icon-arrow-left {
+  margin-top: 5px;
+  margin-right: 15px;
+}
+
+button.el-picker-panel__icon-btn.el-date-picker__next-btn.el-icon-d-arrow-right,
+button.el-picker-panel__icon-btn.el-date-picker__next-btn.el-icon-arrow-right {
+  margin-top: 5px;
+  margin-left: 15px;
+}
+
+// エラー
+.form-item--error > input.el-input__inner {
+  background-color: $form-error-bg-color;
+}
