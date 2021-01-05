@@ -12,7 +12,7 @@
   "dependencies": {
     "auth0-js": "^9.5.1",
     "aws-sdk": "^2.247.1",
-    "axios": "^0.18.0",
+    "axios": "^0.21.1",
     "babel-cli": "^6.26.0",
     "babel-polyfill": "^6.26.0",
     "create-hash": "^1.2.0",
